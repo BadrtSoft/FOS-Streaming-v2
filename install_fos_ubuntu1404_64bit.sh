@@ -9,7 +9,7 @@ if [ -f /etc/lsb-release ]; then
                 error
             fi
         else
-            errorr
+            error
         fi
 fi
 }
