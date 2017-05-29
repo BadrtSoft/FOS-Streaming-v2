@@ -222,10 +222,10 @@ foswebport-streamport()
 info(){
     clear
     echo "********************************************************************************************;
-    echo "Xtream Panel instalado com sucesso... \n";
-    echo "Pagina inicial: 'http://host:7777' \n";
-    echo "Usuario: admin \n";
-    echo "Senha: admin \n";
+    echo "Xtream Panel instalado com sucesso...";
+    echo "Pagina inicial: IP_DO_VPS:7777";
+    echo "Usuario: admin";
+    echo "Senha: admin";
     echo "IMPORTANTE: Depois de iniciar a sessão, aceda as definicoes e verifique o endereço IP. \n";
     echo "*****************************************************************************************;
 }
