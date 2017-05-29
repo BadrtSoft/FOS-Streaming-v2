@@ -226,7 +226,7 @@ info(){
     echo "Pagina inicial: IP_DO_VPS:7777";
     echo "Usuario: admin";
     echo "Senha: admin";
-    echo "IMPORTANTE: Depois de iniciar a sessão, aceda as definicoes e verifique o endereço IP. \n";
+    echo "IMPORTANTE: Depois de iniciar a sessão, aceda as definicoes e verifique o endereço IP. ";
     echo "*****************************************************************************************;
 }
 
