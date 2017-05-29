@@ -5,14 +5,14 @@
     <div class="animated flipInY col-md-4 col-sm-4 col-xs-4 tile_stats_count">
         <div class="left"></div>
         <div class="right">
-            <span class="count_top"><i class="fa fa-user"></i> Online streams</span>
+            <span class="count_top"><i class="fa fa-user"></i> Streams ativas</span>
             <div class="count">{{ $online }}</div>
         </div>
     </div>
     <div class="animated flipInY col-md-4 col-sm-4 col-xs-4 tile_stats_count" onclick="document.location = 'streams.php?running=2'"  style="cursor:pointer">
         <div class="left"></div>
         <div class="right">
-            <span class="count_top"><i class="fa fa-clock-o"></i> Offline streams</span>
+            <span class="count_top"><i class="fa fa-clock-o"></i> Streams inativas</span>
             <div class="count">{{ $offline }}</div>
         </div>
     </div>
@@ -36,13 +36,13 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel tile fixed_height_320">
             <div class="x_title">
-                <h2>SYSTEM</h2>
+                <h2>SISTEMA</h2>
             </div>
             <div class="x_content">
-                <h4>App Usage across versions</h4>
+                <h4>Uso de aplicativos em todas as versões</h4>
                 <div class="widget_summary">
                     <div class="w_left w_25">
-                        <span>SPACE</span>
+                        <span>ESPAÇO</span>
                     </div>
                     <div class="w_center w_55">
                         <div class="progress">
@@ -76,7 +76,7 @@
 
                 <div class="widget_summary">
                     <div class="w_left w_25">
-                        <span>MEMORY</span>
+                        <span>MEMORIA</span>
                     </div>
                     <div class="w_center w_55">
                         <div class="progress">

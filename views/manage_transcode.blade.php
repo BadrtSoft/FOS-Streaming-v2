@@ -5,7 +5,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Manage transcodeprofile</h2>
+                        <h2>Gerenciar perfil de transcode</h2>
 
                         <div class="clearfix"></div>
                     </div>
@@ -23,7 +23,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Profile name <span class="required">*</span></label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nome do perfil <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" name="profilename" class="form-control col-md-7 col-xs-12"  value="{{  isset($_POST['name']) ?  $_POST['name'] : $transcode->name }}">
                                     </div>

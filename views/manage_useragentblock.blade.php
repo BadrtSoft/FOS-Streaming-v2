@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">description
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Descrição
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <textarea class="form-control" name="description" placeholder='' rows="3">{{ $useragentblock->description }}</textarea>
@@ -33,7 +33,7 @@
                         <div class="ln_solid"></div>
                         <div class="form-group">
                             <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" name="submit" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
                     </form>

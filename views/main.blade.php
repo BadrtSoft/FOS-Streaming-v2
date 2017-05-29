@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>FOS-Streaming panel by Tyfix</title>
+    <title>Xtream Panel</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.php" class="site_title"> <span><span>FOS-Streaming <small style="font-size: 10px;">by Tyfix</small></span></span></a>
+                    <a href="index.php" class="site_title"> <span><span>Xtream Panel <small style="font-size: 10px;">by Célio JR</small></span></span></a>
                 </div>
                 <div class="clearfix"></div>
 
@@ -61,30 +61,27 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
                     <div class="menu_section">
-                        <h3>General</h3>
+                        <h3>Geral</h3>
                         <ul class="nav side-menu">
-                            <li><a href="index.php"><i class="fa fa-dashboard"></i> Dashboard </a></li>
+                            <li><a href="index.php"><i class="fa fa-dashboard"></i> Painel de controle </a></li>
                             <li><a href="streams.php"><i class="fa  fa-upload"></i> Streams </a></li>
-                            <li><a href="activities.php"><i class="fa fa-toggle-right"></i> Activities </a></li>
-                            <li><a href="users.php"><i class="fa fa-users"></i> Users </a></li>
-                            <li><a href="categories.php"><i class="fa fa-list"></i> Categories </a></li>
-                            <li><a href="transcodes.php"><i class="fa fa-reorder"></i> Transcode profiles </a></li>
-                            <li><a href="stream_importer.php"><i class="fa fa-archive"></i> Playlist importer </a></li>
+                            <li><a href="activities.php"><i class="fa fa-toggle-right"></i> Atividades </a></li>
+                            <li><a href="users.php"><i class="fa fa-users"></i> Usuarios </a></li>
+                            <li><a href="categories.php"><i class="fa fa-list"></i> Categorias </a></li>
+                            <li><a href="transcodes.php"><i class="fa fa-reorder"></i> Perfil Transcode </a></li>
+                            <li><a href="stream_importer.php"><i class="fa fa-archive"></i> Importar Playlist </a></li>
 
                             <li><a href="admins.php"><i class="fa fa-user"></i> Admin's </a></li>
                             <li><a href="ipblocks.php"><i class="fa fa-exclamation-triangle"></i> Ipblock </a></li>
-                            <li><a href="useragentblocks.php"><i class="fa fa-exclamation-triangle"></i> User agent block </a></li>
-                            <li><a href="settings.php"><i class="fa fa-cog"></i> Settings </a></li>
+                            <li><a href="useragentblocks.php"><i class="fa fa-exclamation-triangle"></i>Agent Block </a></li>
+                            <li><a href="settings.php"><i class="fa fa-cog"></i> Configurações </a></li>
                         </ul>
                     </div>
                     <div class="menu_section">
-                        <h3>Extra information</h3>
+                        <h3>Extra</h3>
                         <ul class="nav side-menu">
-                            <li><a target="_new" href="http://fos-streaming.com"><i class="fa fa-laptop"></i> Website </a></li>
-                            <li><a target="_new" href="https://github.com/zgelici/FOS-Streaming-v1/issues"><i class="fa fa-exclamation-triangle"></i> Report </a></li>
-                            <li><a target="_new" href="http://www.fos-streaming.com/forum/"><i class="fa fa-circle-o"></i> Forum</a></li>
-                            <li><a target="_new" href="http://multics.info/threads/fos-streaming-v1.56885/"><i class="fa fa-circle-o"></i> Multics thread (Support) </a></li>
-                            <li><a target="_new" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ATJFKYPFY65W"><img src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate Button" /></a></li>
+                            <li><a target="_new" href="http://www.facebook.com/celiojr94"><i class="fa fa-laptop"></i> Perfil do Criador </a></li>
+                            <li><a target="_new" href="mailto:celiomagalhaesjr@gmail.com"><i class="fa fa-exclamation-triangle"></i> Reportar </a></li>
                         </ul>
                     </div>
 
@@ -113,7 +110,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
 
-                                <li><a href="?logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                <li><a href="?logout"><i class="fa fa-sign-out pull-right"></i> Sair</a>
                                 </li>
                             </ul>
                         </li>
@@ -136,7 +133,7 @@
             <!-- footer content -->
             <footer>
                 <div class="">
-                    <p class="pull-right">FOS-Streaming by <a href="http://www.tyfix.nl" target="_new">Tyfix</a>
+                    <p class="pull-right">Xtream Panel by <a href="http://www.facebook.com/celiojr94" target="_new">Célio JR</a>
 
                     </p>
                 </div>

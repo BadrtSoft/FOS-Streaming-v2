@@ -21,7 +21,7 @@
                             <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" role="form" action="" method="post">
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Name <span class="required">*</span>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nome <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" name="name" class="form-control col-md-7 col-xs-12"  name="name" value="{{  isset($_POST['name']) ?  $_POST['name'] : $stream->name}}">
@@ -46,7 +46,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Streamurl 3 (backup
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Streamurl 3 (backup)
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" name="streamurl3" class="form-control col-md-7 col-xs-12"  name="streamurl3" value="{{  isset($_POST['streamurl3']) ?  $_POST['streamurl3'] : $stream->streamurl3}}">
@@ -54,7 +54,7 @@
                                 </div>
 								
 								<div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">tvg-id id for xmltv
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">tvg-id id para XMLTV
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" name="tvid" class="form-control col-md-7 col-xs-12"  name="tvid" value="{{  isset($_POST['tvid']) ?  $_POST['tvid'] : $stream->tvid}}">
@@ -62,7 +62,7 @@
                                 </div>
 								
 								<div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">logo name of your channelle (no url post)
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">URL do logotipo de seu canal
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" name="logo" class="form-control col-md-7 col-xs-12"  name="logo" value="{{  isset($_POST['logo']) ?  $_POST['logo'] : $stream->logo}}">
@@ -70,14 +70,14 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Bit stream filter:</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Filtro de fluxo de bits:</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <p style="padding: 5px;"><span><input type="checkbox" class="flat" name="bitstreamfilter" id="" value="1" {{ $stream->bitstreamfilter ? "checked" : ""}}></span></p>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Categoria</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <select name="category" class="form-control">
                                             <option value='{{ $stream->category ? $stream->category->id : "" }}'>{{ $stream->category ? $stream->category->name : "Select" }}</option>
@@ -89,10 +89,10 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Transcode profile</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Perfil Transcode</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <select name="transcode" class="form-control">
-                                            <option value='0'>No transcode</option>
+                                            <option value='0'>Nenhum transcode</option>
                                             @foreach($transcodes as $trans)
                                                 <option value='{{ $trans->id }}' {{ $stream->trans_id  == $trans->id ? "selected" : "" }}>{{ $trans->name }}</option>
                                             @endforeach
@@ -103,14 +103,14 @@
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                        <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                                        <button type="submit" name="submit" class="btn btn-success">Enviar</button>
                                     </div>
                                 </div>
                             </form>
                         @else
                             <div class="alert alert-error">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
-                                <strong>Error!</strong> You need to create an category!
+                                <strong>Erro!</strong> Você precisa criar uma categoria!
                             </div>
                         @endif
                     </div>

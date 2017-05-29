@@ -5,10 +5,10 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Ip Block </h2>
+                    <h2>IP Block </h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <a class="btn btn-round btn-primary" href="manage_useragentblock.php" title="Add">
-                            Add useragent block
+                            Adicionar useragent block
                         </a>
                     </ul>
                     <div class="clearfix"></div>
@@ -26,8 +26,8 @@
                             <tr class="headings">
                                 <th>#</th>
                                 <th>Useragent</th>
-                                <th>Description</th>
-                                <th class=" no-link last"><span class="nobr">Action</span></th>
+                                <th>Descrição</th>
+                                <th class=" no-link last"><span class="nobr">Ação</span></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -47,7 +47,7 @@
                     @else
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            No useragent blocks found
+                            Não há useragent bloqueados
                         </div>
                     @endif
                 </div>

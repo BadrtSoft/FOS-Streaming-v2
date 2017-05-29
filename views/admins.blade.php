@@ -5,10 +5,10 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Admins </h2>
+                    <h2>Adminstrador </h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <a class="btn btn-round btn-primary" href="manage_admin.php" title="Add">
-                            Add admin
+                            Adicionar administrador
                         </a>
                     </ul>
                     <div class="clearfix"></div>
@@ -25,8 +25,8 @@
                             <thead>
                             <tr class="headings">
                                 <th>#</th>
-                                <th>Username</th>
-                                <th class=" no-link last"><span class="nobr">Action</span></th>
+                                <th>Usuario</th>
+                                <th class=" no-link last"><span class="nobr">Ação</span></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -35,8 +35,8 @@
                                     <td class="center">{{ $key+1 }}</td>
                                     <td>{{ $admin->username }}</td>
                                     <td class="center">
-                                        <a class="btn btn-info" href="manage_admin.php?id={{ $admin->id }}" title="Edit">Edit</a>
-                                        <a class="btn btn-danger" href="admins.php?delete={{ $admin->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remove</a>
+                                        <a class="btn btn-info" href="manage_admin.php?id={{ $admin->id }}" title="Edit">Editar</a>
+                                        <a class="btn btn-danger" href="admins.php?delete={{ $admin->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remover</a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -45,7 +45,7 @@
                     @else
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            No admins found
+                            Nenhum administrador
                         </div>
                     @endif
                 </div>

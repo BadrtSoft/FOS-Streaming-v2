@@ -11,7 +11,7 @@
                         <h2>{{ $title }} </h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <a class="btn btn-round btn-primary" href="manage_stream.php" title="Add">
-                                Add stream
+                                Adicionar stream
                             </a>
                         </ul>
                         <div class="clearfix"></div>
@@ -35,9 +35,9 @@
                                     <th>
                                         <input type="checkbox" id="check-all" class="flat">
                                     </th>
-                                    <th>Name</th>
+                                    <th>Nome</th>
                                     <th>Status</th>
-                                    <th>Category</th>
+                                    <th>Categoria</th>
                                     <th>Video</th>
                                     <th>Audio</th>
                                     <th class=" no-link last"><span class="nobr">Action</span>
@@ -100,7 +100,7 @@
                             @else
                                 <div class="alert alert-info">
                                     <button type="button" class="close" data-dismiss="alert">×</button>
-                                    No streams found
+                                    Nenhuma streams
                                 </div>
                             @endif
                         </form>

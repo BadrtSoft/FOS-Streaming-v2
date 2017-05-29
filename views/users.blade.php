@@ -6,10 +6,10 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Users </h2>
+                    <h2>Usuario </h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <a class="btn btn-round btn-primary" href="manage_user.php" title="Add">
-                            Add user
+                            Adcionar usuario
                         </a>
                     </ul>
                     <div class="clearfix"></div>
@@ -26,17 +26,17 @@
                             <thead>
                                 <tr class="headings">
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Password</th>
+                                    <th>Nome</th>
+                                    <th>Senha</th>
                                     <th>Status</th>
-                                    <th>Exp date</th>
-                                    <th>Category</th>
+                                    <th>Exp data</th>
+                                    <th>Categoria</th>
                                     <th>File</th>
-                                    <th>Last viewed channel</th>
-                                    <th>Limit</th>
+                                    <th>Último canal visualizado</th>
+                                    <th>Limite</th>
                                     <th>IP</th>
-                                    <th>User agent</th>
-                                    <th class=" no-link last"><span class="nobr">Action</span></th>
+                                    <th>Agent</th>
+                                    <th class=" no-link last"><span class="nobr">Ação</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -68,8 +68,8 @@
                                         <a href="getfile.php?m3u=true&id={{ $user->id }}" title="GET M3U"><span class="label label-success">M3U</span></a>
                                         <a href="getfile.php?e2=true&id={{ $user->id }}" title="GET E2"><span class="label label-success">E2</span></a>
                                         <a href="getfile.php?tv=true&id={{ $user->id }}" title="GET TV"><span class="label label-success">TV</span></a>
-                                        <a href="clientsgen.php?id={{ $user->id }}" title="Clients"><span class="label label-success">Clients</span></a>
-                                        <a href="javascript:;" data-toggle="modal" data-target="#autoenigma2"><span class="label label-success">Auto Enigma2</span></a>
+                                        <a href="clientsgen.php?id={{ $user->id }}" title="Clients"><span class="label label-success">Clientes</span></a>
+                                        <a href="javascript:;" data-toggle="modal" data-target="#autoenigma2"><span class="label label-success">Enigma2</span></a>
                                     </td>
                                     <td class="center"> @if($user->laststream) {{ $user->laststream->name }} @else Never connected @endif </td>
                                     <td class="center">{{ $user->max_connections }}</td>
@@ -78,8 +78,8 @@
                                     <td class="center"> @if($user->lastconnected_ip) {{ $user->lastconnected_ip }} @else Never connected @endif </td>
                                     <td class="center"> @if($user->useragent) {{ $user->useragent }} @else Never connected @endif </td>
                                     <td class="center">
-                                        <a class="btn btn-info" href="manage_user.php?id={{ $user->id }}" title="Edit">Edit</a>
-                                        <a class="btn btn-danger" href="users.php?delete={{ $user->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remove</a>
+                                        <a class="btn btn-info" href="manage_user.php?id={{ $user->id }}" title="Edit">Editar</a>
+                                        <a class="btn btn-danger" href="users.php?delete={{ $user->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remover</a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -88,7 +88,7 @@
                     @else
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            No users found
+                            Não há usuarios
                         </div>
                     @endif
                 </div>
@@ -110,7 +110,7 @@
                     <p><textarea name="" id="" class="col-md-12" rows="3">wget -O /etc/enigma2/iptv.sh "http://{{ $setting->webip }}:{{ $setting->webport }}/retrieve.php?username={{ $user->username }}&password={{ $user->password }}&type=auto_enigma2_oe2&output=mpegts" && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh</textarea></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
 

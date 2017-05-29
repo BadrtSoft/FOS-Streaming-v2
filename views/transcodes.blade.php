@@ -5,10 +5,10 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Transcode profiles </h2>
+                        <h2>Perfil de Transcode </h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <a class="btn btn-round btn-primary" href="manage_transcode.php" title="Add">
-                                Add transcode
+                                Adicionar transcode
                             </a>
                         </ul>
                         <div class="clearfix"></div>
@@ -25,9 +25,9 @@
                                 <thead>
                                 <tr class="headings">
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>ffmpeg command</th>
-                                    <th class=" no-link last"><span class="nobr">Action</span></th>
+                                    <th>Nome</th>
+                                    <th>Nome ffmpeg</th>
+                                    <th class=" no-link last"><span class="nobr">Ação</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -39,11 +39,11 @@
                                         <td class="center">
 
                                             <a class="btn btn-info" href="manage_transcode.php?id={{ $trans->id }}" title="Edit">
-                                                Edit
+                                                Editar
                                             </a>
 
                                             <a class="btn btn-danger" href="transcodes.php?delete={{ $trans->id }}" title="Delete" onclick="return confirm('Are you sure?')">
-                                                Remove
+                                                Remover
                                             </a>
                                         </td>
                                     </tr>
@@ -53,7 +53,7 @@
                         @else
                             <div class="alert alert-info">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
-                                No transcodes found
+                                Não há transcodes
                             </div>
                         @endif
                     </div>

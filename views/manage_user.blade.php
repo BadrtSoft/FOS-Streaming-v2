@@ -21,28 +21,28 @@
                         <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" role="form" action="" method="post">
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Username <span class="required">*</span></label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Usuario <span class="required">*</span></label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="username" class="form-control col-md-7 col-xs-12"  value="{{  isset($_POST['username']) ?  $_POST['username'] : $user->username}}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Password <span class="required">*</span></label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Senha <span class="required">*</span></label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="password" class="form-control col-md-7 col-xs-12"  value="{{  isset($_POST['password']) ?  $_POST['password'] : $user->password}}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Exp date</label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Exp data</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="expdate" id="expdate" class="date-picker form-control col-md-7 col-xs-12" id="date01" placeholder="0000-00-00" value="{{  isset($_POST['expdate']) ?  $_POST['expdate'] : $user->exp_date }}">
-                                    <span class="help-inline">Unlimited? 0000-00-00 or Leave blank</span>
+                                    <span class="help-inline">Ilimitado? 0000-00-00 ou deixe em branco</span>
 
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Max connection</label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Max de conexões</label>
                                 <div class="col-md-1">
                                     <input type="number" name="limit" class="form-control col-md-7 col-xs-12"  value="{{  isset($_POST['limit']) ?  $_POST['limit'] : $user->max_connections ? $user->max_connections : 1}}">
                                 </div>
@@ -50,14 +50,14 @@
 
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Active</label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Ativo</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <p style="padding: 5px;"><span><input type="checkbox" class="flat" name="active" id="" value="1" {{ $user->active ? "checked" : ""}}></span></p>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Categories</label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Categorias</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <select name="category[]" class="select2_multiple form-control" multiple="multiple">
                                     @foreach ($categories as $category)
@@ -70,7 +70,7 @@
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                                    <button type="submit" name="submit" class="btn btn-success">Enviar</button>
                                 </div>
                             </div>
 
@@ -78,7 +78,7 @@
                     @else
                         <div class="alert alert-error">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            <strong>Error!</strong> You need to create an category!
+                            <strong>Erro!</strong> Você precisa criar uma categoria!
                         </div>
                     @endif
                 </div>

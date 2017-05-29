@@ -5,11 +5,11 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Activities</h2>
+                    <h2>Atividades</h2>
                     <div class="clearfix"></div>
                 </div>
                 <div class="">
-                    <a class="btn btn-danger" title="Delete" href="activities.php?delete_all=1">Delete all logs</a>
+                    <a class="btn btn-danger" title="Delete" href="activities.php?delete_all=1">Excluir todos os logs</a>
                     @if($message)
                         <div class="alert alert-{{ $message['type'] }}">
                             {{ $message['message'] }}
@@ -19,12 +19,12 @@
                     <table id="example" class="table table-striped responsive-utilities jambo_table">
                         <thead>
                         <tr class="headings">
-                            <th>User</th>
+                            <th>Usuario</th>
                             <th>Stream</th>
-                            <th>DataStart</th>
+                            <th>Inicio</th>
                             <th>IP</th>
-                            <th>User agent</th>
-                            <th>Action</th>
+                            <th>Agent</th>
+                            <th>Ação</th>
                             </th>
                         </tr>
                         </thead>
@@ -37,7 +37,7 @@
                                     <td>{{ $activity->user_ip }}</td>
                                     <td>{{ $activity->user_agent }}</td>
                                     <td class="center">
-                                        <a class="btn btn-danger" href="activities.php?delete={{ $activity->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remove</a>
+                                        <a class="btn btn-danger" href="activities.php?delete={{ $activity->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remover</a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -46,7 +46,7 @@
                     @else
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">�</button>
-                            No activity found
+                            Nenhuma atividade
                         </div>
                     @endif
                 </div>
