@@ -155,7 +155,6 @@ packages_install(){
     ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1 /usr/lib/libfreetype.so.6
     fos_install(){
     /usr/sbin/useradd -s /sbin/nologin -U -d /home/fos-streaming -m fosstreaming > /dev/null
-    mkdir /home/fos-streaming > /dev/null
     cd /home/fos-streaming > /dev/null
     wget http://fos-streaming.com/fos-streaming_unpack_x84_64.tar.gz -O /home/fos-streaming/fos-streaming_unpack_x84_64.tar.gz  > /dev/null 2>&1
     tar -xzf /home/fos-streaming/fos-streaming_unpack_x84_64.tar.gz -C /home/fos-streaming/
