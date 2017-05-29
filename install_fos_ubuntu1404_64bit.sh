@@ -6,7 +6,7 @@ if [ -f /etc/lsb-release ]; then
     . /etc/lsb-release
         if [ $DISTRIB_ID == Ubuntu ]; then
             if [ $DISTRIB_RELEASE != "14.04" ]; then
-                errorr
+                error
             fi
         else
             errorr
