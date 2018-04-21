@@ -229,7 +229,7 @@ info(){
     echo "Pagina inicial: $IP:7777";
     echo "Usuario: admin";
     echo "Senha: admin";
-    echo "IMPORTANTE: Depois de iniciar a sessão, aceda as definicoes e verifique o endereço IP. ";
+    echo "IMPORTANTE: Depois de iniciar a sessão, acesse as definicoes e verifique o endereço IP. ";
     echo "*****************************************************************************************;
 }
 
