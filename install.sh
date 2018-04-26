@@ -226,7 +226,7 @@ info(){
     clear
     echo "********************************************************************************************;
     echo "Xtream Panel instalado com sucesso...";
-    echo "Pagina inicial: $IP:7777";
+    echo "Pagina inicial: $IP:8000";
     echo "Usuario: admin";
     echo "Senha: admin";
     echo "IMPORTANTE: Depois de iniciar a sessão, acesse as definicoes e verifique o endereço IP. ";
