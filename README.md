@@ -72,8 +72,3 @@ Contribution are always **welcome and recommended**! Here is how:
 ## License
 Fos-Streamining is an open source project by [Tyfix](https://tyfix.nl that is licensed under [MIT](http://opensource.org/licenses/MIT). Tyfix
 reserves the right to change the license of future releases.
-
-
-Donations are **greatly appreciated!**
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Tyfix ")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ATJFKYPFY65W "Donate")
